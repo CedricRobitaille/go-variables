@@ -36,7 +36,21 @@ func stringEncoding() {
 	fmt.Printf("Hello %s\n", name)
 }
 
+func formatPractice() {
+	fname := "Dalinar"
+	lname := "Kholin"
+	age := 45
+	messageRate := 0.5
+	isSubscribed := false
+	message := "Sometimes a hypocrite is nothing more than a man in the process of changing."
+
+	userLog := fmt.Sprintf("Name: %s %s, Age: %d, Rate: %.1f, Is Subscribed: %t, Message: %s\n", fname, lname, age, messageRate, isSubscribed, message)
+
+	fmt.Printf(userLog)
+}
+
 func main() {
 	// stringInterpolation()
-	stringEncoding()
+	// stringEncoding()
+	formatPractice()
 }
