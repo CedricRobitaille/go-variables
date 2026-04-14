@@ -49,8 +49,22 @@ func formatPractice() {
 	fmt.Printf(userLog)
 }
 
+// Global variables for the showPlayerStats function
+const playerName = "Ranger Rick"
+const playerLevel = 5
+const playerHealth = 75
+
+func showPlayerStats() {
+	name := playerName
+	level := playerLevel
+	health := playerHealth
+
+	fmt.Printf("Player: %s (level %d)\nHealth: %d HP", name, level, health)
+}
+
 func main() {
 	// stringInterpolation()
 	// stringEncoding()
-	formatPractice()
+	// formatPractice()
+	showPlayerStats()
 }
